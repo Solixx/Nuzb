@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Rubik Mono One', monospace;
+    background: #EDEDED;
+    color: #111111;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.nuzb-title{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuzb-title h1{
+    font-size: 256px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Zen Dots', sans-serif;
+}
+
+.navBG{
+    display: block;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 96;
+}
+
+.nav{
+    padding-top: 50px;
+}
+
+.navOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.navOptions a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
