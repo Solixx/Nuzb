@@ -142,19 +142,23 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    gap: 300px;
 }
 
 .section{
     position: relative;
-    margin-top: 300px;
-    margin-bottom: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 600px;
+
+    padding-top: 300px;
+    padding-bottom: 100px;
 }
 
 .latest-realeses-title{
     position: absolute;
 
-    top: 350px;
+    top: 650px;
 
     width: 100%;
     overflow: hidden;
@@ -241,4 +245,188 @@ body{
 
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.aboutGalery{
+    width: 100%;
+    height: 100svh;
+}
+
+.about{
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.about img{
+    border-radius: 10px;
+}
+
+.about .aboutImg:last-child{
+    padding-bottom: 300px;
+}
+
+.about .aboutImg1{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+.about .aboutImg1 img{
+    width: 420px;
+    height: 420px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.about .aboutImg2{
+    position: absolute;
+    top: 220px;
+    left: 0;
+
+    z-index: 0;
+}
+
+.about .aboutImg2 img{
+    width: 530px;
+    height: 300px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.about .aboutImg3{
+    position: absolute;
+    top: 470px;
+    right: 45px;
+
+    z-index: 1;
+}
+
+.about .aboutImg3 img{
+    width: 420px;
+    height: 540px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.about .aboutImg4{
+    position: absolute;
+    top: 770px;
+    left: 0;
+
+    z-index: 0;
+}
+
+.about .aboutImg4 img{
+    width: 420px;
+    height: 380px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.about .aboutImg5{
+    position: absolute;
+    top: 1140px;
+    right: 0;
+
+    z-index: 1;
+}
+
+.about .aboutImg5 img{
+    width: 420px;
+    height: 380px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.contact{
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Rubik Mono One', monospace;
+
+    color: #EDEDED;
+}
+
+.contact form{
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    border: none;
+    border-bottom: #EDEDED 1px solid;
+    background-color: transparent;
+
+    color: #EDEDED;
+
+    resize: vertical;
+
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.contact form textarea{
+    padding-bottom: 100px;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact form button{
+    cursor: pointer;
+    margin-top: 40px;
+    width: 400px;
+    height: 75px;
+    background-color: #EDEDED;
+    color: #111111;
+    border: none;
+
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Rubik Mono One', monospace;
 }

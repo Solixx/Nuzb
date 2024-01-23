@@ -3,6 +3,8 @@ import styles from "../styles/styles.css";
 
 import Index from "@/components/index";
 import Releases from "@/components/releases";
+import About from "@/components/about";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -10,7 +12,17 @@ export default function Home() {
       <main className={styles.main}>
         <Index />
         <div className="content">
-          <Releases />
+          <section className="section">
+            <div>
+              <Releases />
+            </div>
+            <div>
+              <About />
+            </div>
+            <div>
+              <Contact />
+            </div>
+          </section>
         </div>
       </main>
     </>
