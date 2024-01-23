@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 *{
     margin: 0;
@@ -12,15 +13,30 @@ body{
 
     font-family: 'Anton', sans-serif;
     font-family: 'Rubik Mono One', monospace;
-    background: #EDEDED;
+    background: #111111;
     color: #111111;
     font-size: 14px;
     letter-spacing: 5px;
 }
 
+.indexSection{
+    height: 100svh;
+    width: 100%;
+    background-color: #EDEDED;
+
+    position: relative;
+}
+
 .nuzb-title{
     height: 100svh;
     width: 100%;
+
+    position: absolute;
+    z-index: 97;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,9 +44,36 @@ body{
 }
 
 .nuzb-title h1{
+    color: transparent;
     font-size: 256px;
     font-family: 'Anton', sans-serif;
     font-family: 'Zen Dots', sans-serif;
+
+    color: #EDEDED;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.nuzb-image{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nuzb-image img{
+    width: 900px;
+    height: auto;
+
+    object-fit: contain;
+    object-position: 50% 50%;
 }
 
 .navBG{
@@ -40,7 +83,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    z-index: 96;
+    z-index: 99;
 }
 
 .nav{
@@ -60,4 +103,142 @@ body{
     font-size: 20px;
     font-weight: 500;
     transition: 0.3s;
+}
+
+.socialsList{
+    position: relative;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 25px;
+
+    width: 100%;
+    height: 100svh;
+    padding-bottom: 50px;
+
+    z-index: 98;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #111111;
+    opacity: 0.85;
+
+    transition: 0.3s;
+}
+
+.socials a:hover{
+    opacity: 1;
+}
+
+.socials .customIcon{
+    font-size: 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+.section{
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.latest-realeses-title{
+    position: absolute;
+
+    top: 350px;
+
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.latest-realeses-title h1{
+    width: 200%;
+    font-size: 128px;
+    letter-spacing: 35px;
+    text-transform: uppercase;
+    opacity: 0.3;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Rubik Mono One', monospace;
+
+    color: #111111;
+    text-shadow: -2px -2px 0 #EDEDED, 2px -2px 0 #EDEDED, -2px 2px 0 #EDEDED, 2px 2px 0 #EDEDED;
+}
+
+.musicList{
+    position: relative;
+    color: #FFFFFF;
+
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.musicBox{
+    position: relative;
+
+    width: 440px;
+    height: 310px;
+
+    margin-top: 250px;
+}
+
+.musicBoxFirst{
+    margin-top: -30px;
+}
+
+.musicInfo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    
+    z-index: 1;
+}
+
+.musicInfo h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 200;
+
+    max-width: 320px;
+}
+
+.musicInfo p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.musicImage{
+    position: absolute;
+    top: 0;
+    left: 120px;
+
+    width: 330px;
+    height: 330px;
+    
+    z-index: 0;
+}
+
+.musicImage img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50% 50%;
 }
