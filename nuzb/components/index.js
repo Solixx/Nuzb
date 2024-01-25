@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/includes/navbar";
 import Image from "next/image";
 import Socials from "@/components/includes/socials";

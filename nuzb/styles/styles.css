@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -159,6 +163,7 @@ body{
     position: absolute;
 
     top: 650px;
+    right: 0;
 
     width: 100%;
     overflow: hidden;
@@ -166,7 +171,9 @@ body{
 }
 
 .latest-realeses-title h1{
-    width: 200%;
+    position: relative;
+
+    text-wrap: nowrap;
     font-size: 128px;
     letter-spacing: 35px;
     text-transform: uppercase;

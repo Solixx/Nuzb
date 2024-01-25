@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FaSpotify, FaTiktok, FaApple, FaInstagram } from "react-icons/fa";
 
