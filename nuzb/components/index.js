@@ -9,6 +9,7 @@ import Socials from "@/components/includes/socials";
 
 export default function Index() {
   const [animationPlayed, setAnimationPlayed] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navbar = useRef(null);
   const socials = useRef(null);
