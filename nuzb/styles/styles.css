@@ -54,7 +54,7 @@ body{
     font-family: 'Zen Dots', sans-serif;
 
     color: #EDEDED;
-    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    text-shadow: -2px -2px 0 #111111, 2px -2px 0 #111111, -2px 2px 0 #111111, 2px 2px 0 #111111;
 }
 
 .nuzb-image{
